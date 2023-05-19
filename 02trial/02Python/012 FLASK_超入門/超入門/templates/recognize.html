@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>データベース練習</title>
+    </head>
+    <body>
+        <h1>サプー書店</h1>
+        <form method="get" action="{{ url_for('recognizedata') }}">
+            <table border="1">
+                <tr>
+                    <th>入荷日</th>
+                    <th>タイトル</th>
+                    <th>金額</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="arraival_day"></td>
+                    <td><input type="text" name="title"></td>
+                    <td><input type="text" name="price"></td>
+                </tr>
+            </table>
+                <br>
+                <input type="submit" value="登録">
+        </form>
+        <p>{{books}}</p>
+    </body>
+
+
+</html>
